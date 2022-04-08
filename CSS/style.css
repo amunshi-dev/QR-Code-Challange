@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    /*Color Decleration with variable*/
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--LightGray);
+    font-family: 'Outfit', sans-serif;
+}
+
+/* ##################
+    Layout
+#################
+*/
+
+main {
+    height: 100vh;
+    /*A height value has to be set to show the effect of flex.*/
+    display: flex;
+    justify-content: center;
+    /*Align Vertically*/
+    align-items: center;
+    /*Align Horizontally*/
+}
+
+.card-container {
+    width: 320px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    /*100% widht of the parent (card-container)*/
+    border-radius: 10px;
+}
+
+/* ##################
+    TYPOGRAPHY
+    #################
+*/
+h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 25px 5px 0;
+    color: var(--DarkBlue);
+}
+
+p {
+    font-size: 1rem;
+    padding: 20px 15px 25px;
+    color: var(--GrayishBlue);
+    font-weight: 400;
+}
